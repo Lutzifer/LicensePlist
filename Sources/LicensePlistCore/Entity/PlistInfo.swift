@@ -114,7 +114,7 @@ struct PlistInfo {
         let outputPath = options.outputPath
         let itemsPath = outputPath.appendingPathComponent(options.prefix)
         if itemsPath.lp.deleteIfExits() {
-            Log.info("Deleted exiting plist within \(options.prefix)")
+            Log.info("Deleted existing plist within \(options.prefix)")
         }
         itemsPath.lp.createDirectory()
         Log.info("Directory created: \(outputPath)")
